@@ -1,0 +1,247 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.scrollable-invisible::-webkit-scrollbar {
+  display: none;
+}
+
+.headercontainer {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 4fr 2fr auto;
+  grid-gap: 0.5rem;
+}
+
+@media (max-width: 1024px) {
+  .headercontainer {
+    display: none;
+  }
+}
+
+.walletconnect {
+  display: grid;
+  width: 100%;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 1.5rem;
+}
+
+@keyframes fadeIn {
+  0% {
+    background-color: rgba(92, 94, 105, 0.2);
+  }
+  100% {
+    background-color: hsla(0, 0%, 5%, 0.54);
+  }
+}
+
+.custom-modaloverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(10px);
+  animation: fadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.8) translateY(1000px) translateX(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translateY(-50%) translateX(-50%);
+    opacity: 1;
+  }
+}
+
+.custom-modalcontent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  background-color: #142028;
+  border: none;
+  border-radius: 15px;
+  transform: translate(-50%, -50%);
+  animation: scaleUp 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+@media (max-width: 768px) {
+  .custom-modalcontent {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+  }
+}
+
+.mobileNavout {
+  animation-name: showout;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showout {
+  0% {
+    right: -208px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+.mobileNavin {
+  animation-name: showin;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showin {
+  0% {
+    right: 0px;
+  }
+  100% {
+    right: -208px;
+  }
+}
+
+.simplebar-scrollbar {
+  background-color: #121218;
+}
+
+.hideScrollbar::-webkit-scrollbar {
+  background-color: black;
+  height: 8px;
+}
+
+.hideScrollbar::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background-color: #121218;
+}
+
+.hidePageScrollbar::-webkit-scrollbar {
+  background-color: #202020;
+  height: 8px;
+  width: 6px;
+}
+
+.hidePageScrollbar::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background-color: #090a0a;
+}
+
+.dropdownScrollbar::-webkit-scrollbar {
+  background-color: #121218;
+  width: 3px;
+}
+
+.dropdownScrollbar::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background-color: #9f9fa8;
+}
+.myinput[type="checkbox"]:before {
+  position: relative;
+  display: block;
+  width: 11px;
+  height: 11px;
+  border: 1px solid #808080;
+  content: "";
+  background: #fff;
+}
+
+.myinput[type="checkbox"]:after {
+  position: relative;
+  display: block;
+  left: 2px;
+  top: -11px;
+  width: 7px;
+  height: 7px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #b3b3b3 #dcddde #dcddde #b3b3b3;
+  content: "";
+  background-image: linear-gradient(135deg, #b1b6be 0%, #fff 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.myinput[type="checkbox"]:checked:after {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAQAAABuW59YAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAB2SURBVHjaAGkAlv8A3QDyAP0A/QD+Dam3W+kCAAD8APYAAgTVZaZCGwwA5wr0AvcA+Dh+7UX/x24AqK3Wg/8nt6w4/5q71wAAVP9g/7rTXf9n/+9N+AAAtpJa/zf/S//DhP8H/wAA4gzWj2P4lsf0JP0A/wADAHB0Ngka6UmKAAAAAElFTkSuQmCC"),
+    linear-gradient(135deg, #b1b6be 0%, #fff 100%);
+}
+
+.myinput[type="checkbox"]:disabled:after {
+  opacity: 0.4;
+}
+
+.myinput[type="checkbox"]:not(:disabled):checked:hover:after {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAQAAABuW59YAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAB2SURBVHjaAGkAlv8A3QDyAP0A/QD+Dam3W+kCAAD8APYAAgTVZaZCGwwA5wr0AvcA+Dh+7UX/x24AqK3Wg/8nt6w4/5q71wAAVP9g/7rTXf9n/+9N+AAAtpJa/zf/S//DhP8H/wAA4gzWj2P4lsf0JP0A/wADAHB0Ngka6UmKAAAAAElFTkSuQmCC"),
+    linear-gradient(135deg, #8bb0c2 0%, #fff 100%);
+}
+
+.myinput[type="checkbox"]:not(:disabled):hover:after {
+  background-image: linear-gradient(135deg, #8bb0c2 0%, #fff 100%);
+  border-color: #85a9bb #92c2da #92c2da #85a9bb;
+}
+
+.myinput[type="checkbox"]:not(:disabled):hover:before {
+  border-color: none;
+}
+
+/* Large checkboxes */
+.myinput.large {
+  height: 22px;
+  width: 22px;
+}
+
+.myinput.large[type="checkbox"]:before {
+  width: 22px;
+  height: 22px;
+}
+
+.myinput.large[type="checkbox"]:after {
+  top: -20px;
+  width: 16px;
+  height: 16px;
+}
+
+.my-component  {
+  background-image: url("assests/bg.png");
+  /* background-position: center; */
+  background-repeat: repeat;
+  background-size: contain;
+  background-clip: content-box;
+  backdrop-filter: blue(9px);
+  filter: blur(4px);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
+.border-gradient {
+  border-color: radial-gradient(at bottom right, 
+          rgba(207,125,51,1) 5%, rgba(207,125,51,0.05) 20%, 
+          rgba(0,0,0,0) 50%, rgba(0,0,0,0.5) 70%,
+          rgba(255,255,255,0.19) 90%, rgba(255,255,255,0.81) 100%);
+
+
+
+}

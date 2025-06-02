@@ -1,0 +1,168 @@
+{
+  "nav": {
+    "swap": "Swap",
+    "liquidity": "Liquidity",
+    "tokens": "Tokens",
+    "staking": "Staking",
+    "wallet": "Connect Wallet",
+    "search": "Search liquidity pairs or token"
+  },
+  "swap": {
+    "post24Hours": "Post 24 Hours",
+    "swap": "Swap",
+    "from": "From",
+    "useMax": "Use Max",
+    "balance": "Balance",
+    "to": "To",
+    "slippageTolerance": "Slippage Tolerance",
+    "enterAmount": "Enter Amount"
+    },
+  "liquidityTable": {
+    "title": "Liquidity Pools",
+    "subtitle": "Provide liquidity",
+    "concentrated": "Concentrated",
+    "standard": "Standard",
+    "all": "All",
+    "search": "Search liquidity pairs or token",
+    "create": "Create",
+    "pool": "Pool",
+    "feeTier": "feeTier",
+    "liquidity": "Liquidity",
+    "volume": "Volume 24h",
+    "fee": "Fees (24h)",
+    "apr": "APR",
+    "volume24": "Volume (24h)",
+    "deposit": "Deposit"
+
+
+  },
+  "chartButtons": {
+    "volume": "View on BscScan",
+    "liquidity": "Liquidity",
+    "fees": "Fees",
+    "tvl": "TVL",
+    "fee": "Fee tier",
+    "network": "Network",
+    "apr": "APR",
+    "poolType": "Pool Type",
+    "v3": "V3",
+    "pairInfo": "Pair Info"
+  },
+  "liquidity": {
+    "earn": "liquidity to earn"
+  },
+  "liquidityView": {
+    "viewOnBSC": "View on BscScan",
+    "fee": "Fee tier",
+    "network": "Network",
+    "bnbChain": "BNB Chain",
+    "apr": "APR",
+    "poolType": "Pool Type",
+    "v3": "V3",
+    "pairInfo": "Pair Info",
+    "past24Hour": "Past 24 Hours",
+    "addLiquidity": "Add Liquidity",
+    "addPoolToMasterChef": "Add to MasterChef"
+  },
+  "tokenTable": {
+    "allTokens": "All Tokens",
+    "name": "Name",
+    "price": "Price",
+    "priceChange": "Price Change",
+    "volume": "Volume (24h)",
+    "tvl": "TVL",
+    "volumeTvl": "Volume/TVL",
+    "pairInfo": "Pair Info"
+  },
+  "tokenView": {
+    "viewOnBSC": "View on BscScan",
+    "addLiquidity": "Add Liquidity",
+    "trade": "Trade",
+    "price": "Token Price",
+    "priceChange": "Price Change",
+    "volume": "Volume (24h)",
+    "volume7d": "Volume (7 D)",
+    "transaction": "Transaction 24H",
+    "tvl": "TVL"
+  },
+  "staking": {
+    "title": "Staking",
+    "subTitle": "Stake $SHRX to earn additional $SHX yield",
+    "createStake": "Create Staking Pool",
+    "shrx": "$SHRX",
+    "pendingReward": "Pending reward",
+    "staked": "Staked",
+    "apr": "APR",
+    "liquidity": "Liquidity",
+    "totalLocked": "Total Locked",
+    "averageLockDuration": "Average lock duration",
+    "getSHRX": "Get $SHRX now!",
+    "stakeAndLock": "Stake & lock for $SHRX, to enjoy more rewards and benefits!",
+    "days": "days",
+    "returns": "Returns"
+  },
+  "swapModal": {
+    "title": "Swap Setting",
+    "swapSlippage": "Default Transaction Speed (GWEI)",
+    "default": "Default",
+    "instant": "Instant(7)",
+    "standard": "Standard(5)",
+    "fast": "Fast(6)",
+    "liquiditySlippage": "Slippage tolerance",
+    "txDeadline": "TX deadline",
+    "min": "min",
+    "reset": "Reset"
+  },
+  "exchangeModal": {
+    "title": "Exchange Setting",
+    "swapSlippage": "Swap slippage tolerance",
+    "custom": "Custom",
+    "slippageTolerance": "Liquidity slippage tolerance",
+    "language": "Language"
+  },
+  "newTokenModal": {
+    "title": "Add New Token",
+    "addToken": "Add Token",
+    "errors": {
+      "invalidAddress": "Invalid Address",
+      "tokenAlreadyAdded": "Token is already added!"
+    },
+    "enterAddress": "Enter Token Address",
+    "success": {
+      "tokenAdded": "Token added successfully!"
+    },
+    "apply": "Apply"
+  },
+  "addToMasterChefModal": {
+    "title": "Add Pool to MasterChef",
+    "address": "Pool Address",
+    "allocPoint": "Alloc Point",
+    "totalAllocPoint": "Total Alloc Point",
+    "addPool": "Add Pool",
+    "error": {
+      "addPoolFailed": "Add Pool to MasterChef failed."
+    },
+    "success": {
+      "poolAdded": "Pool added successfully!"
+    }
+  },
+  "createStakingModal": {
+    "title": "Staking Pool Setup",
+    "tokenAddress": "Token Address",
+    "poolAmount": "Pool Amount Provided",
+    "apy": "APY",
+    "lockPeriodInDays": "Lock Period in Days",
+    "enterTokenAddress": "Enter Token Address",
+    "enterPool": "Enter Pool Capacity",
+    "create": "Create"
+  },
+  "getStakingModal": {
+    "return": "Return",
+    "looking": "Looking for",
+    "day": "Days",
+    "estimatedReturn": "Estimated Return",
+    "stakeAmount": "Stake Amount",
+    "max": "Max",
+    "stake": "Stake"
+  }
+}
